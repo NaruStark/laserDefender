@@ -152,6 +152,10 @@ MonoBehaviour:
   waveConfigs:
   - {fileID: 11400000, guid: a93c64fa8a89b094b9969f39e3113517, type: 2}
   - {fileID: 11400000, guid: 751e1b02cbe075f4bb05973652de7f79, type: 2}
+  - {fileID: 11400000, guid: b0d8dbd4823fb7643a2a708a86ec7344, type: 2}
+  - {fileID: 11400000, guid: 63ecb0ced67f37f42942f387d36fb98f, type: 2}
+  startingWave: 0
+  looping: 1
 --- !u!4 &1127998947
 Transform:
   m_ObjectHideFlags: 0
@@ -234,7 +238,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 5
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1705571850
 GameObject:
@@ -300,7 +304,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 2
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1661377845425271843
 PrefabInstance:
@@ -426,7 +430,7 @@ PrefabInstance:
     - target: {fileID: 5061500055494841927, guid: 6e4fa60255a78194596c9407e569ff0f,
         type: 3}
       propertyPath: m_RootOrder
-      value: 3
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 5061500055494841927, guid: 6e4fa60255a78194596c9407e569ff0f,
         type: 3}
@@ -495,7 +499,7 @@ PrefabInstance:
     - target: {fileID: 217176757790732031, guid: 9bfb58ca544ae024ba860804442eacc6,
         type: 3}
       propertyPath: m_RootOrder
-      value: 6
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 217176757790732031, guid: 9bfb58ca544ae024ba860804442eacc6,
         type: 3}
@@ -511,6 +515,36 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7631021716947976071, guid: 9bfb58ca544ae024ba860804442eacc6,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 6.43
+      objectReference: {fileID: 0}
+    - target: {fileID: 7631021716947976071, guid: 9bfb58ca544ae024ba860804442eacc6,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -0.67
+      objectReference: {fileID: 0}
+    - target: {fileID: 4204898889222146057, guid: 9bfb58ca544ae024ba860804442eacc6,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 5.55
+      objectReference: {fileID: 0}
+    - target: {fileID: 4204898889222146057, guid: 9bfb58ca544ae024ba860804442eacc6,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0.09
+      objectReference: {fileID: 0}
+    - target: {fileID: 2150036305304203283, guid: 9bfb58ca544ae024ba860804442eacc6,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.19
+      objectReference: {fileID: 0}
+    - target: {fileID: 2150036305304203283, guid: 9bfb58ca544ae024ba860804442eacc6,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -6.52
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9bfb58ca544ae024ba860804442eacc6, type: 3}
@@ -649,6 +683,26 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8402499643569111476, guid: 587068736184ae04b9d0339eb27f6cd6,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 3.19
+      objectReference: {fileID: 0}
+    - target: {fileID: 8402499643569111476, guid: 587068736184ae04b9d0339eb27f6cd6,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -1.41
+      objectReference: {fileID: 0}
+    - target: {fileID: 8598872510798511746, guid: 587068736184ae04b9d0339eb27f6cd6,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 7.42
+      objectReference: {fileID: 0}
+    - target: {fileID: 8598872510798511746, guid: 587068736184ae04b9d0339eb27f6cd6,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -6.87
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 587068736184ae04b9d0339eb27f6cd6, type: 3}
