@@ -109,14 +109,19 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   health: 100
+  scoreValue: 150
   shotCounter: 0
   minTimeBetweenShots: 0.2
-  maxTimeBetweenShots: 3
+  maxTimeBetweenShots: 2
   projectile: {fileID: 9135823247337590702, guid: 95982ce9ed381104db70d9bc858c773d,
     type: 3}
   laserSpeed: 10
   destroyEffect: {fileID: 7052376649139916410, guid: 30a55106ce9a2df4e9c7a8e9fe68b51b,
     type: 3}
+  destroySound: {fileID: 8300000, guid: 422c7d27ddebe0f499503d9011fefd9f, type: 3}
+  laserSound: {fileID: 8300000, guid: 90cf5ad7657d8ad4b8d4e7634e75a9f1, type: 3}
+  volume: 0.927
+  laserVolume: 0.75
 --- !u!58 &6335861918896315173
 CircleCollider2D:
   m_ObjectHideFlags: 0

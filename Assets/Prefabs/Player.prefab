@@ -96,11 +96,15 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   moveSpeed: 10
   padding: 1
-  health: 500
+  health: 1500
   projectile: {fileID: 8460471951794168235, guid: 9f3fc3482df88a74e95d6aa80b3cd561,
     type: 3}
   laserSpeed: 15
   laserFireingPeriod: 0.1
+  destroySound: {fileID: 8300000, guid: 422c7d27ddebe0f499503d9011fefd9f, type: 3}
+  laserSound: {fileID: 8300000, guid: 3a01efb8dd6b7544590c8bb8fa22493f, type: 3}
+  volume: 0.75
+  shootVolume: 0.226
 --- !u!60 &4309176756115110933
 PolygonCollider2D:
   m_ObjectHideFlags: 0

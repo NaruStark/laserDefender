@@ -5,14 +5,23 @@ using UnityEngine;
 
 public class Enemy : MonoBehaviour
 {
-
+    [Header("Enemy Stats")]
     [SerializeField] float health = 100;
+    [SerializeField] int scoreValue = 150;
+
+    [Header("Shooting")]
     [SerializeField] float shotCounter;
     [SerializeField] float minTimeBetweenShots = 0.2f;
     [SerializeField] float maxTimeBetweenShots = 3f;
     [SerializeField] GameObject projectile;
     [SerializeField] float laserSpeed = 10;
     [SerializeField] GameObject destroyEffect;
+    [Header("Sounds")]
+    [SerializeField] AudioClip destroySound;
+    [SerializeField] AudioClip laserSound;
+    [SerializeField] [Range(0, 1)] float volume = 0.75f;
+    [SerializeField] [Range(0, 1)] float laserVolume = 0.75f;
+
 
     void Start()
     {
@@ -42,6 +51,7 @@ public class Enemy : MonoBehaviour
             Quaternion.identity) as GameObject;
         laser.GetComponent<Rigidbody2D>().velocity = new Vector2(0f, -laserSpeed);
         ResetFireCounter();
+        AudioSource.PlayClipAtPoint(laserSound, Camera.main.transform.position, laserVolume);
     }
 
     private void ResetFireCounter()
@@ -64,9 +74,16 @@ public class Enemy : MonoBehaviour
         damageDealer.Hit();
         if (health <= 0)
         {
-            Destroy(gameObject);
-            GameObject particles = Instantiate(destroyEffect, transform.position, Quaternion.identity) as GameObject;
-            Destroy(particles, 1f);
+            Die();
         }
+    }
+
+    private void Die()
+    {
+        FindObjectOfType<GameSession>().AddToScore(scoreValue);
+        Destroy(gameObject);
+        GameObject particles = Instantiate(destroyEffect, transform.position, Quaternion.identity) as GameObject;
+        Destroy(particles, 1f);
+        AudioSource.PlayClipAtPoint(destroySound, Camera.main.transform.position, volume);
     }
 }
