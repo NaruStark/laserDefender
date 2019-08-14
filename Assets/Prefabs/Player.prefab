@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 1661377845037249724}
   - component: {fileID: 1661377845037249725}
   - component: {fileID: 1661377845037249726}
+  - component: {fileID: 5761566690612711380}
   - component: {fileID: 4309176756115110933}
   m_Layer: 8
   m_Name: Player
@@ -105,6 +106,24 @@ MonoBehaviour:
   laserSound: {fileID: 8300000, guid: 3a01efb8dd6b7544590c8bb8fa22493f, type: 3}
   volume: 0.75
   shootVolume: 0.226
+--- !u!114 &5761566690612711380
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1661377845037249727}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d57e4e41194840a40b475f7c36945b4b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  numberOfHearts: 0
+  hearts: []
+  fullHeart: {fileID: 5726080727020278575, guid: de51ab46602d50642b401cd21566e475,
+    type: 3}
+  emptyHeart: {fileID: 1564688358316481467, guid: de51ab46602d50642b401cd21566e475,
+    type: 3}
 --- !u!60 &4309176756115110933
 PolygonCollider2D:
   m_ObjectHideFlags: 0

@@ -80,6 +80,7 @@ public class Player : MonoBehaviour
     {
         health -= damageDealer.GetDamage();
         damageDealer.Hit();
+        GetComponent<Health>().HealthUpdate();
         if(health <= 0)
         {
             Die();
@@ -103,6 +104,10 @@ public class Player : MonoBehaviour
         transform.position = new Vector2(newXpos, newYpos);
     }
 
+    public float GetHealth()
+    {
+        return health;
+    }
 
     private void SetUpMoveBoundaries()
     {
